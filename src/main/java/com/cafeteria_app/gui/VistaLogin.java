@@ -1,13 +1,8 @@
 
 package com.cafeteria_app.gui;
 
-import com.formdev.flatlaf.FlatLightLaf;
-import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import javax.swing.*;
-import java.awt.*;
-
+import org.springframework.stereotype.Component;
 
 @Component
 public class VistaLogin extends javax.swing.JFrame {
@@ -16,7 +11,6 @@ public class VistaLogin extends javax.swing.JFrame {
     public VistaLogin() {
         initComponents();
     }
-
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -32,17 +26,17 @@ public class VistaLogin extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(267, Short.MAX_VALUE)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(215, 215, 215))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(407, 407, 407)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(444, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(89, 89, 89)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addGap(170, 170, 170)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(292, Short.MAX_VALUE))
         );
 
         pack();

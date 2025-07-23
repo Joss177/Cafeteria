@@ -1,20 +1,21 @@
 package com.cafeteria_app;
 
 import com.cafeteria_app.gui.VistaLogin;
+import com.formdev.flatlaf.FlatDarculaLaf;
 import io.github.cdimascio.dotenv.Dotenv;
+
+import javax.swing.*;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import javax.swing.*;
-
 @SpringBootApplication
-public class CafeteriaApplication {
+public class CafeteriaApplication{
 
     public static void main(String[] args) {
-        // 1. Cargar variables desde el archivo .env
         Dotenv dotenv = Dotenv.load();
         System.setProperty("DATABASE_URL", dotenv.get("DATABASE_URL"));
         System.setProperty("DATABASE_USER", dotenv.get("DATABASE_USER"));
@@ -31,5 +32,7 @@ public class CafeteriaApplication {
         });
 
         SpringApplication.run(CafeteriaApplication.class, args);
+
     }
+
 }
